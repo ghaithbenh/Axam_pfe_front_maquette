@@ -1,0 +1,38 @@
+
+
+.signin-admin {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.signin-admin form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+.signin-admin input,
+.signin-admin button {
+    margin: 10px 0; /* Consistent vertical spacing */
+    padding: 8px; /* Adequate padding */
+    width: 100%; /* Full width within the container */
+}
+
+.signin-admin input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.signin-admin button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.signin-admin button:hover {
+    background-color: #0056b3;
+}

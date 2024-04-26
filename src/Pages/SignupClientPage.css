@@ -1,0 +1,14 @@
+.signup-client-page {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.signup-client-page h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
