@@ -1,50 +1,35 @@
-import './App.css'; 
+import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import WelcomePage from './Pages/WelcomePage';
-import SigninClientPage from './Pages/SigninClientPage';
-import SignupClientPage from './Pages/SignupClientPage';
-import SigninAdminPage from './Pages/SigninAdminPage';
-import SignupAdminPage from './Pages/SignupAdminPage';
-import ClientHomePage from './Pages/ClientHomePage';
+import SignIn from './Pages/SignInPage';
+import SignUp from './Pages/SignUpPage';
+import HomePage from './Pages/HomePage';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <WelcomePage />,
-  },
-
-  {
-    path:'/SigninClient',
-    element:<SigninClientPage />
-  },
-
-  {
-   path:'/SignupClient',
-   element:<SignupClientPage/> 
-  },
-
-  {
-   path:'/SigninAdmin',
-   element:<SigninAdminPage/>
-  },
-
-  {
-    path:'/SignupAdmin',
-    element:<SignupAdminPage/>
-  },
-
-  {
-    path:'/ClientHomePage',
-    element:<ClientHomePage/>
-  },
+	{
+		path: '/',
+		element: <WelcomePage />,
+	},
+	{
+		path: '/signin',
+		element: <SignIn />,
+	},
+	{
+		path: '/signup',
+		element: <SignUp />,
+	},
+	{
+		path: '/home',
+		element: <HomePage />,
+	},
 ]);
 
 function App() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+	return (
+		<>
+			<RouterProvider router={router} />
+		</>
+	);
 }
 
-export default App; 
+export default App;

@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './SignupAdmin.css'
+import './SignUp.css'
 
-const SignupAdmin: React.FC = () => {
+const SignUp: React.FC = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         // Here you would typically send the data to a backend server for processing
-        console.log('Admin Registered:', { username, email, password });
-        // After successful registration, navigate to admin dashboard or login page
-        // navigate('/admin-dashboard'); // Uncomment or modify as needed for your routing
+        console.log('User Signed Up:', { username, email, password });
+        // Optionally reset the form or redirect the user
+        setUsername('');
+        setEmail('');
+        setPassword('');
     };
 
     return (
-        <div className="signup-admin">
-            <h2>Create Admin Account</h2>
+        <div className="signup-client">
+            <h2>Create Client Account</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">
                     Username:
@@ -56,4 +56,4 @@ const SignupAdmin: React.FC = () => {
     );
 };
 
-export default SignupAdmin;
+export default SignUp;
