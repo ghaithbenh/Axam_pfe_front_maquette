@@ -4,6 +4,8 @@ import WelcomePage from './Pages/WelcomePage';
 import SignIn from './Pages/SignInPage';
 import SignUp from './Pages/SignUpPage';
 import HomePage from './Pages/HomePage';
+import AdminPage from './Pages/AdminPage';
+import DashboardPage from './Pages/DashboardPage';
 
 const router = createBrowserRouter([
 	{
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
 	{
 		path: '/home',
 		element: <HomePage />,
+	},
+	{
+		path: '/adminsearch',
+		element: <AdminPage />,
+	},
+	{
+		path: '/dashboard', // Add this new route
+		element: <DashboardPage />,
 	},
 ]);
 

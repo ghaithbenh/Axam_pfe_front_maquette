@@ -19,6 +19,8 @@ const Welcome: React.FC = () => {
 					Sign Up
 				</button>
 			</div>
+
+			<button className="visitor-button" onClick={() => handleNavigation('/home')}>Continue comme visiteur</button>
 		</div>
 	);
 };

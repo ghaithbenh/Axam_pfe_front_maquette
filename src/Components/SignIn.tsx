@@ -28,7 +28,7 @@ const SignIn: React.FC = () => {
 			.unwrap()
 			.then((res) => {
 				toast.success('Logged in sucessfully', toastOptions);
-				navigate('/');
+				navigate('/admin');
                 localStorage.setItem('token', res.data);
 				return res;
 			})
@@ -41,14 +41,14 @@ const SignIn: React.FC = () => {
 	return (
 		<div className="signin-client">
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<h2>Sign In</h2>
+				<h2>Login</h2>
 				<label htmlFor="username">
 					Email:
 					<input {...register('email', { required: true })} />
-					{errors.email && <span>Email is required</span>}
+					{errors.email && <span>Email est requis</span>}
 				</label>
 				<label htmlFor="password">
-					Password:
+					Mot de passe:
 					<input
 						type="password"
 						{...register('password', { required: true })}
@@ -59,7 +59,7 @@ const SignIn: React.FC = () => {
 						</span>
 					)}
 				</label>
-				<button type="submit">Sign In</button>
+				<button>S'authentifier</button>
             </form>
             <ToastContainer />
 		</div>

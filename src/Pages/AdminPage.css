@@ -1,0 +1,51 @@
+.admin {
+	text-align: center;
+	padding: 20px;
+}
+
+.admin form {
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+.admin input {
+	width: 70%;
+	padding: 10px;
+	margin-right: -5px;
+	border: 1px solid #ddd;
+	border-radius: 4px 0 0 4px;
+}
+
+.admin button {
+	width: 30%;
+	padding: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+}
+
+.admin button:hover {
+	background-color: #0056b3;
+}
+
+.form-group {
+	margin-bottom: 30px; /* Increased margin bottom for more space */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /* Labels above inputs */
+}
+
+label {
+	margin-bottom: 5px; /* Space between label and input */
+}
+
+/* .dashboard-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
